@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="libtga">
+      <UniqueIdentifier>{0c13d362-93d3-4a6c-bce6-6b81cb5686f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libtga\tga.c">
+      <Filter>libtga</Filter>
+    </ClCompile>
+    <ClCompile Include="libtga\tgaread.c">
+      <Filter>libtga</Filter>
+    </ClCompile>
+    <ClCompile Include="libtga\tgawrite.c">
+      <Filter>libtga</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libtga\tga.h">
+      <Filter>libtga</Filter>
+    </ClInclude>
+    <ClInclude Include="libtga\tgaconfig.h">
+      <Filter>libtga</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
