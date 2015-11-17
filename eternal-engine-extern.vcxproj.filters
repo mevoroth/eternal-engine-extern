@@ -6,13 +6,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="libtga\tga.c">
+    <ClCompile Include="libtga\tga.cpp">
       <Filter>libtga</Filter>
     </ClCompile>
-    <ClCompile Include="libtga\tgaread.c">
+    <ClCompile Include="libtga\tgaread.cpp">
       <Filter>libtga</Filter>
     </ClCompile>
-    <ClCompile Include="libtga\tgawrite.c">
+    <ClCompile Include="libtga\tgawrite.cpp">
       <Filter>libtga</Filter>
     </ClCompile>
   </ItemGroup>

@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="libtga\tga.c" />
-    <ClCompile Include="libtga\tgaread.c" />
-    <ClCompile Include="libtga\tgawrite.c" />
+    <ClCompile Include="libtga\tga.cpp" />
+    <ClCompile Include="libtga\tgaread.cpp" />
+    <ClCompile Include="libtga\tgawrite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libtga\tga.h" />
@@ -96,6 +96,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
