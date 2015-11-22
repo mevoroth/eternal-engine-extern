@@ -19,13 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="libtga\tga.cpp" />
-    <ClCompile Include="libtga\tgaread.cpp" />
-    <ClCompile Include="libtga\tgawrite.cpp" />
+    <ClInclude Include="libtga\include\Tga.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="libtga\tga.h" />
-    <ClInclude Include="libtga\tgaconfig.h" />
+    <ClCompile Include="libtga\src\Tga.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5326DE8A-9474-4F60-9CEC-D51F9CA0D697}</ProjectGuid>
@@ -78,7 +75,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir)\libtga;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Mevoroth\Documents\Visual Studio 2013\Projects\eternal-engine\eternal-engine-extern\libtga\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

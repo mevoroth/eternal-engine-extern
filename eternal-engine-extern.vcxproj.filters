@@ -6,22 +6,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="libtga\tga.cpp">
+    <ClInclude Include="libtga\include\Tga.h">
       <Filter>libtga</Filter>
-    </ClCompile>
-    <ClCompile Include="libtga\tgaread.cpp">
-      <Filter>libtga</Filter>
-    </ClCompile>
-    <ClCompile Include="libtga\tgawrite.cpp">
-      <Filter>libtga</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="libtga\tga.h">
+    <ClCompile Include="libtga\src\Tga.cpp">
       <Filter>libtga</Filter>
-    </ClInclude>
-    <ClInclude Include="libtga\tgaconfig.h">
-      <Filter>libtga</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

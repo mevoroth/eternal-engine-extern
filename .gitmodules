@@ -1,0 +1,3 @@
+[submodule "libtga"]
+	path = libtga
+	url = git@github.com:mevoroth/libtga.git
