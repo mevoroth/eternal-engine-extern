@@ -1,3 +1,6 @@
 [submodule "libtga"]
 	path = libtga
 	url = git@github.com:mevoroth/libtga.git
+[submodule "imgui"]
+	path = imgui
+	url = git@github.com:mevoroth/imgui.git
