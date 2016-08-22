@@ -24,13 +24,31 @@
     <ClInclude Include="imgui\stb_rect_pack.h" />
     <ClInclude Include="imgui\stb_textedit.h" />
     <ClInclude Include="imgui\stb_truetype.h" />
+    <ClInclude Include="json\include\json\autolink.h" />
+    <ClInclude Include="json\include\json\config.h" />
+    <ClInclude Include="json\include\json\features.h" />
+    <ClInclude Include="json\include\json\forwards.h" />
+    <ClInclude Include="json\include\json\json.h" />
+    <ClInclude Include="json\include\json\reader.h" />
+    <ClInclude Include="json\include\json\value.h" />
+    <ClInclude Include="json\include\json\writer.h" />
+    <ClInclude Include="json\src\lib_json\json_batchallocator.h" />
+    <ClInclude Include="json\src\lib_json\json_tool.h" />
     <ClInclude Include="libtga\include\Tga.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
     <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="json\src\lib_json\json_reader.cpp" />
+    <ClCompile Include="json\src\lib_json\json_value.cpp" />
+    <ClCompile Include="json\src\lib_json\json_writer.cpp" />
     <ClCompile Include="libtga\src\Tga.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="json\src\lib_json\json_internalarray.inl" />
+    <None Include="json\src\lib_json\json_internalmap.inl" />
+    <None Include="json\src\lib_json\json_valueiterator.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5326DE8A-9474-4F60-9CEC-D51F9CA0D697}</ProjectGuid>
@@ -83,7 +101,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir)\libtga\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)libtga\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)json\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(ProjectDir)\libtga\include;$(IncludePath)</IncludePath>

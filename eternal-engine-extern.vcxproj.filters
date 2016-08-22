@@ -7,6 +7,9 @@
     <Filter Include="imgui">
       <UniqueIdentifier>{07818045-d66a-4612-bd5c-7bf139c39101}</UniqueIdentifier>
     </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{f6217458-c2d5-4cc6-9587-fd1ddc72d39a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libtga\include\Tga.h">
@@ -27,6 +30,36 @@
     <ClInclude Include="imgui\stb_truetype.h">
       <Filter>imgui</Filter>
     </ClInclude>
+    <ClInclude Include="json\include\json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\include\json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\include\json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\include\json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\include\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\include\json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\include\json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\include\json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\src\lib_json\json_batchallocator.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\src\lib_json\json_tool.h">
+      <Filter>json</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="libtga\src\Tga.cpp">
@@ -41,5 +74,25 @@
     <ClCompile Include="imgui\imgui_draw.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
+    <ClCompile Include="json\src\lib_json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\src\lib_json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\src\lib_json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="json\src\lib_json\json_internalarray.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="json\src\lib_json\json_internalmap.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="json\src\lib_json\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
   </ItemGroup>
 </Project>
