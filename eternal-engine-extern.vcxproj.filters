@@ -10,6 +10,9 @@
     <Filter Include="json">
       <UniqueIdentifier>{f6217458-c2d5-4cc6-9587-fd1ddc72d39a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="renderdoc">
+      <UniqueIdentifier>{4533afd7-7d8d-4016-a0fd-db6c282455bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libtga\include\Tga.h">
@@ -60,6 +63,12 @@
     <ClInclude Include="json\src\lib_json\json_tool.h">
       <Filter>json</Filter>
     </ClInclude>
+    <ClInclude Include="renderdoc\include\renderdoc_app.h">
+      <Filter>renderdoc</Filter>
+    </ClInclude>
+    <ClInclude Include="renderdoc\include\RenderDoc.h">
+      <Filter>renderdoc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="libtga\src\Tga.cpp">
@@ -82,6 +91,9 @@
     </ClCompile>
     <ClCompile Include="json\src\lib_json\json_writer.cpp">
       <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="renderdoc\source\RenderDoc.cpp">
+      <Filter>renderdoc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
