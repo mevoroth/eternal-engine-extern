@@ -10,3 +10,6 @@
 [submodule "renderdoc"]
 	path = renderdoc
 	url = git@github.com:mevoroth/renderdoc.git
+[submodule "DirectX-Headers"]
+	path = DirectX-Headers
+	url = git@github.com:mevoroth/DirectX-Headers.git
