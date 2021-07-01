@@ -13,6 +13,9 @@
     <Filter Include="renderdoc">
       <UniqueIdentifier>{4533afd7-7d8d-4016-a0fd-db6c282455bb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DirectX-Headers">
+      <UniqueIdentifier>{e0ee94f9-4379-47e8-bce8-e8021b366d87}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libtga\include\Tga.h">
@@ -68,6 +71,9 @@
     </ClInclude>
     <ClInclude Include="renderdoc\include\RenderDoc.h">
       <Filter>renderdoc</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX-Headers\include\directx\d3dx12.h">
+      <Filter>DirectX-Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
