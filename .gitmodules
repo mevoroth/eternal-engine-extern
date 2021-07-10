@@ -13,3 +13,6 @@
 [submodule "DirectX-Headers"]
 	path = DirectX-Headers
 	url = git@github.com:mevoroth/DirectX-Headers.git
+[submodule "optick"]
+	path = optick
+	url = git@github.com:mevoroth/optick.git
