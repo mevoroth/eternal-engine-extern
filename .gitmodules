@@ -13,3 +13,6 @@
 [submodule "optick"]
 	path = optick
 	url = git@github.com:mevoroth/optick.git
+[submodule "rapidjson"]
+	path = rapidjson
+	url = git@github.com:mevoroth/rapidjson.git
