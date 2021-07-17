@@ -4,9 +4,6 @@
 [submodule "imgui"]
 	path = imgui
 	url = git@github.com:mevoroth/imgui.git
-[submodule "json"]
-	path = json
-	url = git@github.com:mevoroth/json.git
 [submodule "renderdoc"]
 	path = renderdoc
 	url = git@github.com:mevoroth/renderdoc.git
