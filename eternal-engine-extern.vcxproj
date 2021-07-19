@@ -191,7 +191,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <DisableSpecificWarnings>4189;4100</DisableSpecificWarnings>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;IMGUI_USER_CONFIG="Imgui/ImguiConfig.hpp";ETERNAL_USE_STD_PARALLEL=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;IMGUI_USER_CONFIG="Imgui/ImguiConfig.hpp";ETERNAL_USE_STD_PARALLEL=1;ETERNAL_PROFILER_USE_VERBOSE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ForcedIncludeFiles>sal.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
