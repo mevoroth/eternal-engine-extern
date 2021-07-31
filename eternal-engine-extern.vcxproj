@@ -193,6 +193,7 @@
       <DisableSpecificWarnings>4189;4100</DisableSpecificWarnings>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;IMGUI_USER_CONFIG="Imgui/ImguiConfig.hpp";ETERNAL_USE_STD_PARALLEL=1;ETERNAL_PROFILER_USE_VERBOSE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ForcedIncludeFiles>sal.h</ForcedIncludeFiles>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
