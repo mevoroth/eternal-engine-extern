@@ -28,6 +28,39 @@
     <Filter Include="rapidjson\msinttypes">
       <UniqueIdentifier>{f398b9b1-6da6-4199-b5ce-f5c43059aa44}</UniqueIdentifier>
     </Filter>
+    <Filter Include="directxcompiler">
+      <UniqueIdentifier>{50f257d1-47cb-4b57-93ee-c08c44310837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\DxcBindingTable">
+      <UniqueIdentifier>{a31a633d-26f1-4a68-8cf9-900ccd93227a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\DXIL">
+      <UniqueIdentifier>{564b5556-779b-4de9-b281-5aea94fc2168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\DxilContainer">
+      <UniqueIdentifier>{eb10f67b-505c-44db-be03-88a5acf447ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\DxilPIXPasses">
+      <UniqueIdentifier>{eec5a787-bc03-49d8-8b74-d9c79bf05ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\DxilRootSignature">
+      <UniqueIdentifier>{1c25cf8b-fec7-42ef-9b51-ab420dee0160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\DxrFallback">
+      <UniqueIdentifier>{d04961a0-5eb9-4cbd-8d8e-e5e8c370e853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\HLSL">
+      <UniqueIdentifier>{f6088f1c-6512-4afc-9bc7-789a98fe459f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\Support">
+      <UniqueIdentifier>{87e7afdb-9f25-4832-af0a-0964be675bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\Test">
+      <UniqueIdentifier>{9bc83b9d-cd7c-4e80-a1f3-dfdb636bea6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="directxcompiler\Tracing">
+      <UniqueIdentifier>{7abedbb5-16c1-4b3e-ac03-d54f936d116d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libtga\include\Tga.h">
@@ -222,6 +255,288 @@
     <ClInclude Include="rapidjson\include\rapidjson\msinttypes\stdint.h">
       <Filter>rapidjson\msinttypes</Filter>
     </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\dxcapi.h">
+      <Filter>directxcompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\dxcapi.internal.h">
+      <Filter>directxcompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\dxcdxrfallbackcompiler.h">
+      <Filter>directxcompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\dxcerrors.h">
+      <Filter>directxcompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\dxcisense.h">
+      <Filter>directxcompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\dxcpix.h">
+      <Filter>directxcompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\dxctools.h">
+      <Filter>directxcompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HlslIntrinsicOp.h">
+      <Filter>directxcompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxcBindingTable\DxcBindingTable.h">
+      <Filter>directxcompiler\DxcBindingTable</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DXIL.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilCBuffer.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilCompType.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilConstants.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilCounters.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilEntryProps.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilFunctionProps.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilInstructions.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilInterpolationMode.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilMetadataHelper.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilModule.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilOperations.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilPDB.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilResource.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilResourceBase.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilResourceBinding.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilResourceProperties.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilSampler.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilSemantic.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilShaderFlags.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilShaderModel.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilSignature.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilSignatureElement.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilSigPoint.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilSubobject.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilTypeSystem.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DXIL\DxilUtil.h">
+      <Filter>directxcompiler\DXIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxilContainer\DxilContainerReader.h">
+      <Filter>directxcompiler\DxilContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxilContainer\DxilPipelineStateValidation.h">
+      <Filter>directxcompiler\DxilContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxilContainer\DxilRuntimeReflection.h">
+      <Filter>directxcompiler\DxilContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxilContainer\DxcContainerBuilder.h">
+      <Filter>directxcompiler\DxilContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxilContainer\DxilContainer.h">
+      <Filter>directxcompiler\DxilContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxilContainer\DxilContainerAssembler.h">
+      <Filter>directxcompiler\DxilContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxilPIXPasses\DxilPIXPasses.h">
+      <Filter>directxcompiler\DxilPIXPasses</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxilPIXPasses\DxilPIXVirtualRegisters.h">
+      <Filter>directxcompiler\DxilPIXPasses</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxilRootSignature\DxilRootSignature.h">
+      <Filter>directxcompiler\DxilRootSignature</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\DxrFallback\DxrFallbackCompiler.h">
+      <Filter>directxcompiler\DxrFallback</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilFallbackLayerPass.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilGenerationPass.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilLinker.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilNoops.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilPackSignatureElement.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilSignatureAllocator.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilSpanAllocator.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilValidation.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLLowerUDT.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLMatrixLowerHelper.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLMatrixLowerPass.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLMatrixType.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLModule.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLOperationLower.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLOperationLowerExtension.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLOperations.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLResource.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLSLExtensionsCodegenHelper.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\HLUtil.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\ComputeViewIdState.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\ControlDependence.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilConvergentName.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\HLSL\DxilExportMap.h">
+      <Filter>directxcompiler\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\d3dx12.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\dxcapi.impl.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\dxcapi.use.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\dxcfilesystem.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\DxcLangExtensionsCommonHelper.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\DxcLangExtensionsHelper.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\ErrorCodes.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\exception.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\FileIOHelper.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\Global.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\HLSLOptions.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\microcom.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\SPIRVOptions.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\Unicode.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\WinAdapter.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\WinFunctions.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\WinIncludes.h">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Support\d3d12TokenizedProgramFormat.hpp">
+      <Filter>directxcompiler\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Test\DxcTestUtils.h">
+      <Filter>directxcompiler\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Test\HLSLTestData.h">
+      <Filter>directxcompiler\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Test\HlslTestUtils.h">
+      <Filter>directxcompiler\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Test\WEXAdapter.h">
+      <Filter>directxcompiler\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Test\CompilationResult.h">
+      <Filter>directxcompiler\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\Test\D3DReflectionDumper.h">
+      <Filter>directxcompiler\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="dxc\include\directxcompiler\d3d12shader.h">
+      <Filter>directxcompiler</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="libtga\src\Tga.cpp">
@@ -272,5 +587,42 @@
     <ClCompile Include="optick\src\optick_server.cpp">
       <Filter>optick</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dxc\include\directxcompiler\CMakeLists.txt">
+      <Filter>directxcompiler</Filter>
+    </Text>
+    <Text Include="dxc\include\directxcompiler\DXIL\CMakeLists.txt">
+      <Filter>directxcompiler\DXIL</Filter>
+    </Text>
+    <Text Include="dxc\include\directxcompiler\HLSL\CMakeLists.txt">
+      <Filter>directxcompiler\HLSL</Filter>
+    </Text>
+    <Text Include="dxc\include\directxcompiler\Support\CMakeLists.txt">
+      <Filter>directxcompiler\Support</Filter>
+    </Text>
+    <Text Include="dxc\include\directxcompiler\Tracing\CMakeLists.txt">
+      <Filter>directxcompiler\Tracing</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dxc\include\directxcompiler\DXIL\DxilSigPoint.inl">
+      <Filter>directxcompiler\DXIL</Filter>
+    </None>
+    <None Include="dxc\include\directxcompiler\DxilContainer\DxilRuntimeReflection.inl">
+      <Filter>directxcompiler\DxilContainer</Filter>
+    </None>
+    <None Include="dxc\include\directxcompiler\HLSL\DxilSignatureAllocator.inl">
+      <Filter>directxcompiler\HLSL</Filter>
+    </None>
+    <None Include="dxc\include\directxcompiler\HLSL\ViewIDPipelineValidation.inl">
+      <Filter>directxcompiler\HLSL</Filter>
+    </None>
+    <None Include="dxc\include\directxcompiler\Support\HLSLOptions.td">
+      <Filter>directxcompiler\Support</Filter>
+    </None>
+    <None Include="dxc\include\directxcompiler\Tracing\dxcetw.man">
+      <Filter>directxcompiler\Tracing</Filter>
+    </None>
   </ItemGroup>
 </Project>
