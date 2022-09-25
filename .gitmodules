@@ -19,3 +19,6 @@
 [submodule "dxc"]
 	path = dxc
 	url = git@github.com:mevoroth/dxc.git
+[submodule "DirectXTex"]
+	path = DirectXTex
+	url = git@github.com:microsoft/DirectXTex.git
