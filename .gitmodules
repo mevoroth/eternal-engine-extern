@@ -21,4 +21,4 @@
 	url = git@github.com:mevoroth/dxc.git
 [submodule "DirectXTex"]
 	path = DirectXTex
-	url = git@github.com:microsoft/DirectXTex.git
+	url = git@github.com:mevoroth/DirectXTex.git

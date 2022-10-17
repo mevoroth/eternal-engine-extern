@@ -20,6 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DirectX-Headers\include\directx\d3dx12.h" />
+    <ClInclude Include="DirectXTex\DirectXTex\BC.h" />
+    <ClInclude Include="DirectXTex\DirectXTex\BCDirectCompute.h" />
+    <ClInclude Include="DirectXTex\DirectXTex\d3dx12.h" />
+    <ClInclude Include="DirectXTex\DirectXTex\DDS.h" />
+    <ClInclude Include="DirectXTex\DirectXTex\DirectXTex.h" />
+    <ClInclude Include="DirectXTex\DirectXTex\DirectXTexP.h" />
+    <ClInclude Include="DirectXTex\DirectXTex\filters.h" />
+    <ClInclude Include="DirectXTex\DirectXTex\scoped.h" />
     <ClInclude Include="dxc\include\directxcompiler\d3d12shader.h" />
     <ClInclude Include="dxc\include\directxcompiler\dxcapi.h" />
     <ClInclude Include="dxc\include\directxcompiler\dxcapi.internal.h" />
@@ -179,6 +187,27 @@
     <ClInclude Include="renderdoc\include\renderdoc_app.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DirectXTex\DirectXTex\BC.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\BC4BC5.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\BC6HBC7.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\BCDirectCompute.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexCompress.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexCompressGPU.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexConvert.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexD3D11.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexD3D12.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexDDS.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexFlipRotate.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexHDR.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexImage.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexMipmaps.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexMisc.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexNormalMaps.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexPMAlpha.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexResize.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexTGA.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexUtil.cpp" />
+    <ClCompile Include="DirectXTex\DirectXTex\DirectXTexWIC.cpp" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
     <ClCompile Include="imgui\imgui_draw.cpp" />
@@ -204,12 +233,22 @@
     <Text Include="dxc\include\directxcompiler\Tracing\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DirectXTex\DirectXTex\DirectXTex.inl" />
+    <None Include="DirectXTex\DirectXTex\Shaders\CompileShaders.cmd" />
     <None Include="dxc\include\directxcompiler\DxilContainer\DxilRuntimeReflection.inl" />
     <None Include="dxc\include\directxcompiler\DXIL\DxilSigPoint.inl" />
     <None Include="dxc\include\directxcompiler\HLSL\DxilSignatureAllocator.inl" />
     <None Include="dxc\include\directxcompiler\HLSL\ViewIDPipelineValidation.inl" />
     <None Include="dxc\include\directxcompiler\Support\HLSLOptions.td" />
     <None Include="dxc\include\directxcompiler\Tracing\dxcetw.man" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DirectXTex\DirectXTex\Shaders\BC6HEncode.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="DirectXTex\DirectXTex\Shaders\BC7Encode.hlsl">
+      <FileType>Document</FileType>
+    </None>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5326DE8A-9474-4F60-9CEC-D51F9CA0D697}</ProjectGuid>
@@ -260,7 +299,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir)libtga\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)json\include;$(ProjectDir)renderdoc\include;D:\Code\VulkanSDK\1.2.176.1\Include;$(SolutionDir)eternal-engine-utils\include;$(SolutionDir)eternal-engine-core\include</IncludePath>
+    <IncludePath>$(ProjectDir)libtga\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)json\include;$(ProjectDir)renderdoc\include;C:\Program Files\VulkanSDK\1.2.189.0\Include;$(SolutionDir)eternal-engine-utils\include;$(SolutionDir)eternal-engine-core\include</IncludePath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(ProjectDir)libtga\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)json\include;$(ProjectDir)renderdoc\include;D:\Code\VulkanSDK\1.2.176.1\Include</IncludePath>
@@ -333,4 +373,23 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <Target Name="ATGEnsureShaders" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <_ATGFXCPath>$(WindowsSDK_ExecutablePath_x64.Split(';')[0])</_ATGFXCPath>
+      <_ATGFXCPath>$(_ATGFXCPath.Replace("x64",""))</_ATGFXCPath>
+      <_ATGFXCPath Condition="'$(_ATGFXCPath)' != '' and !HasTrailingSlash('$(_ATGFXCPath)')">$(_ATGFXCPath)\</_ATGFXCPath>
+    </PropertyGroup>
+    <Exec Condition="!Exists('Shaders\Compiled\BC6HEncode_EncodeBlockCS.inc')" WorkingDirectory="$(ProjectDir)DirectXTex\DirectXTex\Shaders" Command="CompileShaders" EnvironmentVariables="WindowsSdkVerBinPath=$(_ATGFXCPath)" />
+    <PropertyGroup>
+      <_ATGFXCPath />
+    </PropertyGroup>
+  </Target>
+  <Target Name="ATGDeleteShaders" AfterTargets="Clean">
+    <ItemGroup>
+      <_ATGShaderHeaders Include="$(ProjectDir)DirectXTex\DirectXTex\Shaders\Compiled\*.inc" />
+      <_ATGShaderSymbols Include="$(ProjectDir)DirectXTex\DirectXTex\Shaders\Compiled\*.pdb" />
+    </ItemGroup>
+    <Delete Files="@(_ATGShaderHeaders)" />
+    <Delete Files="@(_ATGShaderSymbols)" />
+  </Target>
 </Project>
