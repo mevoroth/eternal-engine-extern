@@ -67,6 +67,12 @@
     <Filter Include="DirectXTex\Shaders">
       <UniqueIdentifier>{fb4f81d1-1af0-4bfc-b8bd-87f75987c59f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NVIDIANsightAftermath">
+      <UniqueIdentifier>{2313ef3b-411f-4bc9-90a3-4c1a69c371a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NVIDIANsightAftermath\NVIDIANsightAftermath">
+      <UniqueIdentifier>{28383eba-a96a-4a09-9531-fc6eee89eb71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libtga\include\Tga.h">
@@ -567,6 +573,30 @@
     <ClInclude Include="DirectXTex\DirectXTex\scoped.h">
       <Filter>DirectXTex</Filter>
     </ClInclude>
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath\GFSDK_Aftermath.h">
+      <Filter>NVIDIANsightAftermath\NVIDIANsightAftermath</Filter>
+    </ClInclude>
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath\GFSDK_Aftermath_Defines.h">
+      <Filter>NVIDIANsightAftermath\NVIDIANsightAftermath</Filter>
+    </ClInclude>
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath\GFSDK_Aftermath_GpuCrashDump.h">
+      <Filter>NVIDIANsightAftermath\NVIDIANsightAftermath</Filter>
+    </ClInclude>
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath\GFSDK_Aftermath_GpuCrashDumpDecoding.h">
+      <Filter>NVIDIANsightAftermath\NVIDIANsightAftermath</Filter>
+    </ClInclude>
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath.hpp">
+      <Filter>NVIDIANsightAftermath</Filter>
+    </ClInclude>
+    <ClInclude Include="NVIDIANsightAftermath\include\NsightAftermathGpuCrashTracker.h">
+      <Filter>NVIDIANsightAftermath</Filter>
+    </ClInclude>
+    <ClInclude Include="NVIDIANsightAftermath\include\NsightAftermathHelpers.h">
+      <Filter>NVIDIANsightAftermath</Filter>
+    </ClInclude>
+    <ClInclude Include="NVIDIANsightAftermath\include\NsightAftermathShaderDatabase.h">
+      <Filter>NVIDIANsightAftermath</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="libtga\src\Tga.cpp">
@@ -679,6 +709,15 @@
     </ClCompile>
     <ClCompile Include="DirectXTex\DirectXTex\DirectXTexWIC.cpp">
       <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="NVIDIANsightAftermath\src\NsightAftermathGpuCrashTracker.cpp">
+      <Filter>NVIDIANsightAftermath</Filter>
+    </ClCompile>
+    <ClCompile Include="NVIDIANsightAftermath\src\NVIDIANsightAftermath.cpp">
+      <Filter>NVIDIANsightAftermath</Filter>
+    </ClCompile>
+    <ClCompile Include="NVIDIANsightAftermath\src\NsightAftermathShaderDatabase.cpp">
+      <Filter>NVIDIANsightAftermath</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -129,6 +129,14 @@
     <ClInclude Include="imgui\imstb_textedit.h" />
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="libtga\include\Tga.h" />
+    <ClInclude Include="NVIDIANsightAftermath\include\NsightAftermathGpuCrashTracker.h" />
+    <ClInclude Include="NVIDIANsightAftermath\include\NsightAftermathHelpers.h" />
+    <ClInclude Include="NVIDIANsightAftermath\include\NsightAftermathShaderDatabase.h" />
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath.hpp" />
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath\GFSDK_Aftermath.h" />
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath\GFSDK_Aftermath_Defines.h" />
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath\GFSDK_Aftermath_GpuCrashDump.h" />
+    <ClInclude Include="NVIDIANsightAftermath\include\NVIDIANsightAftermath\GFSDK_Aftermath_GpuCrashDumpDecoding.h" />
     <ClInclude Include="optick\src\optick.config.h" />
     <ClInclude Include="optick\src\optick.h" />
     <ClInclude Include="optick\src\optick_capi.h" />
@@ -214,6 +222,9 @@
     <ClCompile Include="imgui\imgui_tables.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="libtga\src\Tga.cpp" />
+    <ClCompile Include="NVIDIANsightAftermath\src\NsightAftermathGpuCrashTracker.cpp" />
+    <ClCompile Include="NVIDIANsightAftermath\src\NsightAftermathShaderDatabase.cpp" />
+    <ClCompile Include="NVIDIANsightAftermath\src\NVIDIANsightAftermath.cpp" />
     <ClCompile Include="optick\src\optick_capi.cpp" />
     <ClCompile Include="optick\src\optick_core.cpp" />
     <ClCompile Include="optick\src\optick_gpu.cpp" />

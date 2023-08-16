@@ -22,3 +22,6 @@
 [submodule "DirectXTex"]
 	path = DirectXTex
 	url = git@github.com:mevoroth/DirectXTex.git
+[submodule "NVIDIANsightAftermath"]
+	path = NVIDIANsightAftermath
+	url = git@github.com:mevoroth/NVIDIANsightAftermath.git
