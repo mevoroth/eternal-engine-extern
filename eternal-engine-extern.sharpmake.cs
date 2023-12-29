@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-[module: Sharpmake.Include(@"..\eternal-engine\eternal-engine.sharpmake.cs")]
+[module: Sharpmake.Include(@"..\eternal-engine\eternal-engine-project.sharpmake.cs")]
 
 namespace EternalEngine
 {
 	[Sharpmake.Generate]
-	public class EternalEngineExternProject : EternalEngineProject
+	public class EternalEngineExternProject : EternalEngineBaseProject
 	{
 		static readonly Dictionary<string, string> FiltersRemapping = new Dictionary<string, string> {
 			{ @"rapidjson\contrib\natvis", @"rapidjson\natvis" }
@@ -26,6 +26,7 @@ namespace EternalEngine
 				@"(.*)imgui\\(.*)\\(.*)",
 				@"(.*)rapidjson\\example\\(.*)",
 				@"(.*)rapidjson\\test\\(.*)",
+				@"(.*)rapidjson\\thirdparty\\(.*)",
 				@"(.*)DirectX-Headers\\test\\(.*)",
 				@"(.*)DirectXTex\\DDSView\\(.*)",
 				@"(.*)optick\\samples\\(.*)",
