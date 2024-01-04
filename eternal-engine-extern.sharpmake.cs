@@ -79,7 +79,7 @@ namespace EternalEngine
 				@"$(SolutionDir)eternal-engine-core\include",
 			});
 
-			if (InTarget.Platform == Platform.win64 || InTarget.Platform == Platform.win32)
+			if (ExtensionMethods.IsPC(InTarget.Platform))
 			{
 				InConfiguration.IncludePaths.AddRange(new string[] {
 					@"[conf.ProjectPath]\DirectX-Headers\include",
