@@ -1,5 +1,6 @@
 ﻿using Sharpmake;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text.RegularExpressions;
 
 [module: Sharpmake.Include(@"..\eternal-engine\eternal-engine-project.sharpmake.cs")]
@@ -41,29 +42,17 @@ namespace EternalEngine
 			});
 		}
 
-		public override void AdditionalFiltering(Strings InSourceFiles, ref Strings InOutSourceFilesExclude)
+		public override void PreResolveSourceFiles()
 		{
-			base.AdditionalFiltering(InSourceFiles, ref InOutSourceFilesExclude);
-
-			for (int NonWindowsExclusionIndex = 0; NonWindowsExclusionIndex < NonWindowsExclusions.Length; ++NonWindowsExclusionIndex)
-			{
-				NonWindowsExclusions[NonWindowsExclusionIndex] = NonWindowsExclusions[NonWindowsExclusionIndex].ToLower();
-			}
+			base.PreResolveSourceFiles();
 
 			for (int ConfigurationIndex = 0; ConfigurationIndex < Configurations.Count; ++ConfigurationIndex)
 			{
 				if (Configurations[ConfigurationIndex].Platform != Platform.win64 && Configurations[ConfigurationIndex].Platform != Platform.win32)
 				{
-					foreach (string CurrentSourceFile in InSourceFiles)
+					foreach (string CurrentNonWindowsExclusion in NonWindowsExclusions)
 					{
-						foreach (string CurrentNonWindowsExclusion in NonWindowsExclusions)
-						{
-							if (CurrentSourceFile.Contains(CurrentNonWindowsExclusion))
-							{
-								InOutSourceFilesExclude.Add(CurrentSourceFile);
-								break;
-							}
-						}
+						Configurations[ConfigurationIndex].SourceFilesBuildExcludeRegex.Add(".*" + CurrentNonWindowsExclusion.ToLowerInvariant() + ".*");
 					}
 				}
 			}
