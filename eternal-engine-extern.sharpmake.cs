@@ -20,8 +20,24 @@ namespace EternalEngine
 			"include",
 		};
 
-		static readonly string[] NonWindowsExclusions = new string[] {
+		static readonly string[] NonMicrosoftExclusions = new string[] {
 			"DirectXTex",
+			"DirectX-Headers",
+			"NVIDIANsightAftermath",
+			"renderdoc",
+		};
+
+		static readonly string[] MicrosoftExclusions = new string[] {
+			"DirectXTexD3D11",
+			"DDSTextureLoader9",
+			"DDSTextureLoader11",
+			"BCDirectCompute",
+			"DirectXTexCompressGPU",
+			"ScreenGrab",
+			"Texassemble",
+			@"Texconv\",
+			"Texdiag",
+			"WICTextureLoader",
 			"DirectX-Headers",
 			"NVIDIANsightAftermath",
 			"renderdoc",
@@ -48,11 +64,19 @@ namespace EternalEngine
 
 			for (int ConfigurationIndex = 0; ConfigurationIndex < Configurations.Count; ++ConfigurationIndex)
 			{
-				if (Configurations[ConfigurationIndex].Platform != Platform.win64 && Configurations[ConfigurationIndex].Platform != Platform.win32)
+				if (Configurations[ConfigurationIndex].Platform != Platform.win64 && Configurations[ConfigurationIndex].Platform != Platform.win32 && Configurations[ConfigurationIndex].Platform != Platform.scarlett)
 				{
-					foreach (string CurrentNonWindowsExclusion in NonWindowsExclusions)
+					foreach (string CurrentNonWindowsExclusion in NonMicrosoftExclusions)
 					{
 						Configurations[ConfigurationIndex].SourceFilesBuildExcludeRegex.Add(".*" + CurrentNonWindowsExclusion.ToLowerInvariant() + ".*");
+					}
+				}
+				else
+				{
+					foreach (string CurrentScarlettExclusion in MicrosoftExclusions)
+					{
+						//Configurations[ConfigurationIndex].
+						Configurations[ConfigurationIndex].SourceFilesBuildExcludeRegex.Add(".*" + CurrentScarlettExclusion.ToLowerInvariant() + @"\.*");
 					}
 				}
 			}
