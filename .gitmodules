@@ -1,27 +1,45 @@
 [submodule "libtga"]
 	path = libtga
 	url = git@github.com:mevoroth/libtga.git
+	branch = master
+	update = rebase
 [submodule "imgui"]
 	path = imgui
 	url = git@github.com:mevoroth/imgui.git
+	branch = master
+	update = rebase
 [submodule "renderdoc"]
 	path = renderdoc
 	url = git@github.com:mevoroth/renderdoc.git
+	branch = master
+	update = rebase
 [submodule "DirectX-Headers"]
 	path = DirectX-Headers
 	url = git@github.com:mevoroth/DirectX-Headers.git
+	branch = main
+	update = rebase
 [submodule "optick"]
 	path = optick
 	url = git@github.com:mevoroth/optick.git
+	branch = master
+	update = rebase
 [submodule "rapidjson"]
 	path = rapidjson
 	url = git@github.com:mevoroth/rapidjson.git
+	branch = master
+	update = rebase
 [submodule "dxc"]
 	path = dxc
 	url = git@github.com:mevoroth/dxc.git
+	branch = master
+	update = rebase
 [submodule "DirectXTex"]
 	path = DirectXTex
 	url = git@github.com:mevoroth/DirectXTex.git
+	branch = main
+	update = rebase
 [submodule "NVIDIANsightAftermath"]
 	path = NVIDIANsightAftermath
 	url = git@github.com:mevoroth/NVIDIANsightAftermath.git
+	branch = master
+	update = rebase
