@@ -45,6 +45,6 @@
 	update = rebase
 [submodule "libwav"]
 	path = libwav
-	url = git@github.com:mevoroth/libtga.git
+	url = git@github.com:mevoroth/libwav.git
 	branch = main
 	update = rebase
