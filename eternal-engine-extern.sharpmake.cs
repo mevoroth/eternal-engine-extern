@@ -89,6 +89,7 @@ namespace EternalEngine
 			// Include paths
 			InConfiguration.IncludePaths.AddRange(new string[] {
 				@"[conf.ProjectPath]\libtga\include",
+				@"[conf.ProjectPath]\libwav\include",
 				@"$(SolutionDir)eternal-engine-core\include",
 			});
 
