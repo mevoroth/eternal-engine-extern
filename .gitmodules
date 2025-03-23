@@ -43,3 +43,8 @@
 	url = git@github.com:mevoroth/NVIDIANsightAftermath.git
 	branch = master
 	update = rebase
+[submodule "libwav"]
+	path = libwav
+	url = git@github.com:mevoroth/libtga.git
+	branch = main
+	update = rebase
